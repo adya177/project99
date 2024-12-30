@@ -1,190 +1,190 @@
-# def cal_fact(n):
-#     fact = 1
-#     for i in range (1,n+1):
-#         fact*=i
-#         print(fact)
-# cal_fact(6)        
+ def cal_fact(n):
+    fact = 1
+    for i in range (1,n+1):
+        fact*=i
+        print(fact)
+cal_fact(6)        
 
 
-# def convertor(usd_val):
-#     inr_val = usd_val * 83
-#     print(usd_val,"USD=",inr_val,"INR")
-# convertor(100)
+def convertor(usd_val):
+    inr_val = usd_val * 83
+    print(usd_val,"USD=",inr_val,"INR")
+convertor(100)
 
 
-# def show(n):
-#     if (n == 0):
-#         return 
-#     print(n)
-#     show(n-1)
-#     print("END")
-# show(3)
+def show(n):
+    if (n == 0):
+        return 
+    print(n)
+    show(n-1)
+    print("END")
+show(3)
 
 
-# def fact(n):
-#     if (n==0 or n==1):
-#         return 1
-#     else:
-#         return n*fact(n-1)
-# print(fact(4))
+def fact(n):
+    if (n==0 or n==1):
+        return 1
+    else:
+        return n*fact(n-1)
+print(fact(4))
      
 
-# def string_operations(s):
-#     print("Original string:", s)
-#     print("Uppercase:", s.upper())
-#     print("Lowercase:", s.lower())
-#     print("Title case:", s.title())
-#     print("Reversed string:", s[::-1])
-#     print("Substring replacement:", s.replace("Welcome", "Hello"))
+def string_operations(s):
+    print("Original string:", s)
+    print("Uppercase:", s.upper())
+    print("Lowercase:", s.lower())
+    print("Title case:", s.title())
+    print("Reversed string:", s[::-1])
+    print("Substring replacement:", s.replace("Welcome", "Hello"))
 
 
-# s = "Welcome"
-# string_operations(s)
-
-
-
-# for i in range(1,6):
-#     print("hello world!!!")
+s = "Welcome"
+string_operations(s)
 
 
 
-
-# def outer_func(a,b):
-#     def inner_func(c,d):
-#         return c + d
-#     return inner_func(a,b)
-#     return a
-# result = outer_func(5,10)
-# print(result)
-
-
-# def disp():
-#     def show():
-#         print("show function")
-#     print("Display Function")
-#     show()
-# disp()        
+for i in range(1,6):
+    print("hello world!!!")
 
 
 
 
-# def disp(sh):
-#     print("Display Function + sh()")
-# def show():
-#     return "Show Function"
-# disp(show)
+def outer_func(a,b):
+    def inner_func(c,d):
+        return c + d
+    return inner_func(a,b)
+    return a
+result = outer_func(5,10)
+print(result)
+
+
+def disp():
+    def show():
+        print("show function")
+    print("Display Function")
+    show()
+disp()        
 
 
 
 
-# def show(name,age):
-#     print(name,age)
-# show(age = 20 ,name= "ateeb",rollno = 9)
+def disp(sh):
+    print("Display Function + sh()")
+def show():
+    return "Show Function"
+disp(show)
+
+
+
+
+def show(name,age):
+    print(name,age)
+show(age = 20 ,name= "ateeb",rollno = 9)
 
 
 
 
 
-# def display_function(*args):
-#     for i in args:
-#         print(i)
-# display_function(name = "Emma",age = 25)
+def display_function(*args):
+    for i in args:
+        print(i)
+display_function(name = "Emma",age = 25)
 
 
 
 
-# class Employee():
-#     def __init__(self,role,dept,salary):
-#         self.role=role
-#         self.dept=dept
-#         self.salary=salary
-#     def showdetails(self):
-#         print("role=",self.role,)
-#         print("dept=",self.dept,)
-#         print("salary=",self.salary)
-# class Engineer(Employee):
-#     def __init__(self,name,age):
-#         self.name = name
-#         self.age = age 
-#         super().__init__("Engineer","IT","75,000")        
-# engg1 = Engineer("Elon Musk",50)
-# engg1.showdetails()
+class Employee():
+    def __init__(self,role,dept,salary):
+        self.role=role
+        self.dept=dept
+        self.salary=salary
+    def showdetails(self):
+        print("role=",self.role,)
+        print("dept=",self.dept,)
+        print("salary=",self.salary)
+class Engineer(Employee):
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age 
+        super().__init__("Engineer","IT","75,000")        
+engg1 = Engineer("Elon Musk",50)
+engg1.showdetails()
 
 
 
 
-# list1=[1,"a","abc",[2,3,4,5],8,9]
-# print(len(list1))
+list1=[1,"a","abc",[2,3,4,5],8,9]
+print(len(list1))
 
 
-# list2=[1,2,3,4,5,6,7,8,9,10]
-# print(list2[::3])
+list2=[1,2,3,4,5,6,7,8,9,10]
+print(list2[::3])
 
-# states = ("Delhi",)
-# print(type(states))
+states = ("Delhi",)
+print(type(states))
 
-# message = "an apple a day keeps the doctor away"
-# print(message.count("o"))
-
-
-# class Car():
-#     def __init__(self):
-#         self.speed = 0
-#     def __del__(self):
-#         print("the object is out of scope")
-# ioniq = Car()
-# del ioniq
+message = "an apple a day keeps the doctor away"
+print(message.count("o"))
 
 
-# class BankAccount():
-#     def __get_atm_pin(self):
-#         print("******")
-# my_bank = BankAccount()
-# print(my_bank._BankAccount__get_atm_pin())
+class Car():
+    def __init__(self):
+        self.speed = 0
+    def __del__(self):
+        print("the object is out of scope")
+ioniq = Car()
+del ioniq
+
+
+class BankAccount():
+    def __get_atm_pin(self):
+        print("******")
+my_bank = BankAccount()
+print(my_bank._BankAccount__get_atm_pin())
 
 
 
 #INHERITANCE EXAMPLE : using super() built function method !!!!!
 
 
-# class Person():
-#     def __init__(self,name,gender):
-#         self.name = name
-#         self.gender = gender
-#     def print_Person_details(self):
-#         print("name : ",self.name)
-#         print("gender : ",self.gender)
-# class Teacher(Person):
-#     def __init__(self,name,gender,specialization):
-#         super().__init__(name,gender)
-#         self.specialization = specialization
-#     def print_Teacher_details(self):
-#         super().print_Person_details()
-#         print("specialization : ",self.specialization)
-# new_teacher = Teacher('Ateeb','Male','CSE CORE')
-# new_teacher.print_Teacher_details()
+class Person():
+    def __init__(self,name,gender):
+        self.name = name
+        self.gender = gender
+    def print_Person_details(self):
+        print("name : ",self.name)
+        print("gender : ",self.gender)
+class Teacher(Person):
+    def __init__(self,name,gender,specialization):
+        super().__init__(name,gender)
+        self.specialization = specialization
+    def print_Teacher_details(self):
+        super().print_Person_details()
+        print("specialization : ",self.specialization)
+new_teacher = Teacher('Ateeb','Male','CSE CORE')
+new_teacher.print_Teacher_details()
 
 
 
                      #OR
 
 
-# class Person():
-#     def __init__(self,name,gender):
-#         self.name = name
-#         self.gender = gender
-#     def print_Person_details(self):
-#         print("name : ",self.name)
-#         print("gender : ",self.gender)
-# class Teacher(Person):
-#     def __init__(self,name,gender,specialization):
-#         Person.__init__(self,name,gender)
-#         self.specialization = specialization
-#     def print_Teacher_details(self):
-#         Person.print_Person_details(self)
-#         print("specialization : ",self.specialization)
-# new_teacher = Teacher('Ateeb','Male','CSE CORE')
-# new_teacher.print_Teacher_details()
+class Person():
+    def __init__(self,name,gender):
+        self.name = name
+        self.gender = gender
+    def print_Person_details(self):
+        print("name : ",self.name)
+        print("gender : ",self.gender)
+class Teacher(Person):
+    def __init__(self,name,gender,specialization):
+        Person.__init__(self,name,gender)
+        self.specialization = specialization
+    def print_Teacher_details(self):
+        Person.print_Person_details(self)
+        print("specialization : ",self.specialization)
+new_teacher = Teacher('Ateeb','Male','CSE CORE')
+new_teacher.print_Teacher_details()
  
 
 
@@ -192,47 +192,48 @@
 #METHOD OVERRIDING EXAMPLE : two times print_details we used and the one used in derived class overrides the one used in the base class
 
 
-# class Person():
-#     def __init__(self,name,gender):
-#         self.name = name
-#         self.gender = gender
-#     def print_details(self):
-#         print("name : ",self.name)
-#         print("gender : ",self.gender)
-# class Teacher(Person):
-#     def __init__(self,name,gender,specialization):
-#         super().__init__(name,gender)
-#         self.specialization = specialization
-#     def print_details(self):
-#         super().print_details()
-#         print("specialization : ",self.specialization)
-# new_teacher = Teacher('Ateeb','Male','CSE CORE')
-# new_teacher.print_details()
+class Person():
+    def __init__(self,name,gender):
+        self.name = name
+        self.gender = gender
+    def print_details(self):
+        print("name : ",self.name)
+        print("gender : ",self.gender)
+class Teacher(Person):
+    def __init__(self,name,gender,specialization):
+        super().__init__(name,gender)
+        self.specialization = specialization
+    def print_details(self):
+        super().print_details()
+        print("specialization : ",self.specialization)
+new_teacher = Teacher('Ateeb','Male','CSE CORE')
+new_teacher.print_details()
 
 #containorship example
 
-# class MusicPlayer():
-#     def __init__(self):
-#         self.status = False
-#         self.play_list = []
-#     def Play_Music(self):
-#         for music in self.play_list :
-#             print(music)
-# class Car():
-#     def __init__(self):
-#         self.player = MusicPlayer()
-# alto = Car()
-# alto.player.status = True
-# print(alto.player.Play_Mu8sic())
+class MusicPlayer():
+    def __init__(self):
+        self.status = False
+        self.play_list = []
+    def Play_Music(self):
+        for music in self.play_list :
+            print(music)
+class Car():
+    def __init__(self):
+        self.player = MusicPlayer()
+alto = Car()
+alto.player.status = True
+print(alto.player.Play_Mu8sic())
 
 #code for printing star pattern !!!!!!!
 
-# rows = int(input("Enter the number of rows :" )) 
-# for i in range(0, rows):  
-#         for j in range(0, i + 1):  
-#             print("* ",end = " ")       
-#         print() 
- 
+rows = int(input("Enter the number of rows :" )) 
+for i in range(0, rows):  
+        for j in range(0, i + 1):  
+            print("* ",end = " ")       
+        print() 
+
+#code for plotting the graph !!!!
 import math
 
 try:
